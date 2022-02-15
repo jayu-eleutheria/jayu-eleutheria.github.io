@@ -1,0 +1,285 @@
+/* Font sizes for reference (as I dislike using vars for them):
+Headings: 64px, 50px, 42px, 36px, 28px, 24px
+Body text, and monospace/pre/code: 24px
+Small text: 20px */
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Han+Sans&family=Dela+Gothic+One&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+HK:wght@100;300;400;500;700;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+/* *** */
+/* Variables */
+	/* Color */
+		/* Color variables */
+:root {
+	/* Colors by hue and brightness */
+	--black: #282828;
+	--blue: #83a598;
+	--bright-red: #c4789c;
+	--dark-red: #8b2c50;
+	--white: #e8ebb2;
+	/* Colors by function */
+	--background-color: var(--blue);
+	--foreground-color: var(--black);
+	--highlight-color: var(--dark-red);
+	--border-color: var(--black);
+	}
+		/* *** */
+		/* Light theme */
+			/* Color assignment */
+html[data-theme='light'] {
+	--background-color: var(--blue);
+	--foreground-color: var(--black);
+	--highlight-color: var(--dark-red);
+	--border-color: var(--black);
+}
+			/* *** */
+		/* *** */
+		/* Dark theme */
+			/* Color assignment */
+html[data-theme='dark'] {
+	--background-color: var(--black);
+	--foreground-color: var(--white);
+	--highlight-color: var(--blue);
+	--border-color: var(--blue);
+}
+			/* *** */
+		/* *** */
+	/* *** */
+	/* Fonts */
+:root {
+	--heading-font-family: "Archivo Black", "Black Han Sans", "Dela Gothic One", "Noto Sans HK", "Noto Sans SC", "Noto Sans TC", sans-serif;
+	--body-font-family: "Archivo", "Zen Kaku Gothic Antique", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", serif;
+	--small-font-family: "Archivo Narrow", "Zen Kaku Gothic Antique", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", sans-serif;
+	--monospace-font-family: "Anonymous Pro", "Nanum Gothic Coding", "Zen Kaku Gothic Antique", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", monospace;
+}
+	/* *** */
+/* *** */
+/* Colors */
+
+html, body {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+header, nav, footer {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+nav > h1 {
+	color: var(--foreground-color);
+}
+h1, h2, h3, h4, h5, h6 {
+	color: var(--highlight-color);
+}
+h1 > strong {
+	color: var(--foreground-color);
+}
+h2 > strong {
+	color: var(--foreground-color);
+}
+h3 > strong {
+	color: var(--foreground-color);
+}
+h4 > strong {
+	color: var(--foreground-color);
+}
+h5 > strong {
+	color: var(--foreground-color);
+}
+h6 > strong {
+	color: var(--foreground-color);
+}
+p {
+	color: var(--foreground-color);
+}
+a, a:visited {
+	color: var(--highlight-color);
+	text-decoration: unset;
+}
+a:hover {
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: unset;
+}
+button {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+button:hover, form, input, select, option {
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+}
+code, pre {
+	color: var(--foreground-color);
+}
+/* Fonts */
+html, body {
+	font-family: var(--body-font-family);
+	font-size: 24px;
+}
+nav {
+	font-family: var(--small-font-family);
+	font-size: 20px;
+}
+nav > h1 {
+	font-size: 24px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--heading-font-family);
+	font-weight: 900;
+	line-height: 1.2em;
+}
+h1 {
+	font-size: 64px;
+}
+h2 {
+	font-size: 50px;
+}
+h3 {
+	font-size: 42px;
+}
+h4 {
+	font-size: 36px;
+}
+h5 {
+	font-size: 28px;
+}
+h6 {
+	font-size: 24px;
+}
+p {
+	font-family: var(--body-font-family);
+	font-size: 24px;
+	line-height: 1.2em;
+	text-align: justify;
+}
+p > strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+code, pre {
+	font-family: var(--monospace-font-family);
+	font-size: 18px;
+	line-height: 1em
+}
+/* Position, width, flex, borders, paddings, margins, etc. */
+body {
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+nav > h1 {
+	padding: 15px 5px 15px 5px;
+}
+nav > a {
+	padding: 15px 5px 15px 5px;
+}
+p {
+	margin: 0px;
+}
+code, pre {
+	border: 1px dashed var(--border-color);
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.site_visible {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.site_header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: var(--border-color);
+	justify-content: center;
+	align-items: baseline;
+	padding: 0px;
+	margin: 0px;
+}
+.site_header_nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	margin: 0px;
+	padding: 0px;
+}
+.site_content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.site_content_external_map_bar {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	flex-basis: 320px;
+	justify-content: center;
+	align-items: center;
+}
+.site_content_internal_map_bar {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	flex-basis: 320px;
+	justify-content: center;
+	align-items: center;
+}
+.site_content_content_bar {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	flex-basis: 1280px;
+	max-width: 1280px;
+	justify-content: flex-start;
+	align-items: center;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: var(--border-color);
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: var(--border-color);
+}
+.site_article_header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 15px;
+	padding-right: 15px;
+	flex-grow: 1;
+}
+.site_article_header_title {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	flex-grow: 1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.site_article_content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	flex-grow: 1;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
