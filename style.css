@@ -193,12 +193,16 @@ body {
 	min-height: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
 	padding: 0px;
 	text-align: center;
 }
 nav > h1 {
 	padding: 15px 5px 15px 5px;
+	margin: 0px;
 }
 nav > a {
 	padding: 15px 5px 15px 5px;
