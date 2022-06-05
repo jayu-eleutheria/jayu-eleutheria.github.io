@@ -11,10 +11,10 @@ Small text: 20px */
 :root {
 	/* Colors by hue and brightness */
 	--black: #282828;
-	--blue: #83a598;
-	--bright-red: #c4789c;
-	--dark-red: #8b2c50;
-	--white: #e8ebb2;
+	--blue: #d8f2e8;
+	--bright-red: #b0275c;
+	--dark-red: #8c1f4c;
+	--white: #f2d4c2;
 	/* Colors by function */
 	--background-color: var(--blue);
 	--foreground-color: var(--black);
