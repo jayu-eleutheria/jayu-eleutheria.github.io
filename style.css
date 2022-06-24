@@ -140,22 +140,22 @@ nav > h1 {
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--body-font-family);
 	font-weight: bold;
-	line-height: 1em;
+	line-height: 1.2em;
 }
 h1 {
-	font-size: 24px;
+	font-size: 64px;
 }
 h2 {
-	font-size: 24px;
+	font-size: 50px;
 }
 h3 {
-	font-size: 24px;
+	font-size: 42px;
 }
 h4 {
-	font-size: 24px;
+	font-size: 36px;
 }
 h5 {
-	font-size: 24px;
+	font-size: 28px;
 }
 h6 {
 	font-size: 24px;
