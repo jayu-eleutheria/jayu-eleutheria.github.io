@@ -213,6 +213,24 @@ nav > h1 {
 	padding: 15px 5px 15px 5px;
 	margin: 0px;
 }
+h1 {
+	text-indent: 1em;
+}
+h2 {
+	text-indent: 2em;
+}
+h3 {
+	text-indent: 3em;
+}
+h4 {
+	text-indent: 4em;
+}
+h5 {
+	text-indent: 5em;
+}
+h6 {
+	text-indent: 6em;
+}
 nav > a {
 	padding: 15px 5px 15px 5px;
 }
@@ -339,21 +357,4 @@ hr::after {
 li::marker {
 	content: '▪';
 }
-h1::before {
-	content: " ";
-}
-h2::before {
-	content: "  ";
-}
-h3::before {
-	content: "   ";
-}
-h4::before {
-	content: "    ";
-}
-h5::before {
-	content: "     ";
-}
-h6::before {
-	content: "      ";
-}
+
