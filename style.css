@@ -138,8 +138,8 @@ nav > h1 {
 	font-size: 24px;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--body-font-family);
-	font-weight: bold;
+	font-family: var(--heading-font-family);
+	font-weight: 900;
 	line-height: 1.2em;
 }
 h1 {
@@ -340,20 +340,20 @@ li::marker {
 	content: '▪';
 }
 h1::before {
-	content: "# ";
+	content: " ";
 }
 h2::before {
-	content: "## ";
+	content: "  ";
 }
 h3::before {
-	content: "### ";
+	content: "   ";
 }
 h4::before {
-	content: "#### ";
+	content: "    ";
 }
 h5::before {
-	content: "##### ";
+	content: "     ";
 }
 h6::before {
-	content: "###### ";
+	content: "      ";
 }
