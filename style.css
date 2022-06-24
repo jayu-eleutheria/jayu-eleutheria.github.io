@@ -213,23 +213,20 @@ nav > h1 {
 	padding: 15px 5px 15px 5px;
 	margin: 0px;
 }
-h1 {
-	text-indent: 1em;
-}
 h2 {
-	text-indent: 2em;
+	text-indent: 0.5em;
 }
 h3 {
-	text-indent: 3em;
+	text-indent: 1em;
 }
 h4 {
-	text-indent: 4em;
+	text-indent: 1.5em;
 }
 h5 {
-	text-indent: 5em;
+	text-indent: 2em;
 }
 h6 {
-	text-indent: 6em;
+	text-indent: 2.5em;
 }
 nav > a {
 	padding: 15px 5px 15px 5px;
