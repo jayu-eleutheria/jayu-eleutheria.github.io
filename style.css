@@ -10,13 +10,13 @@ Small text: 20px */
 		/* Color variables */
 :root {
 	/* Colors by hue and brightness */
-	--black: #282828;
-	--blue: #d8f2e8;
+	--black: #000000;
+	--blue: #f5fffb;
 	--bright-red: #b0275c;
 	--dark-red: #8c1f4c;
-	--white: #f2d4c2;
+	--white: #fff5f9;
 	/* Colors by function */
-	--background-color: var(--blue);
+	--background-color: var(--white);
 	--foreground-color: var(--black);
 	--highlight-color: var(--dark-red);
 	--border-color: var(--black);
@@ -25,7 +25,7 @@ Small text: 20px */
 		/* Light theme */
 			/* Color assignment */
 html[data-theme='light'] {
-	--background-color: var(--blue);
+	--background-color: var(--white);
 	--foreground-color: var(--black);
 	--highlight-color: var(--dark-red);
 	--border-color: var(--black);
@@ -75,24 +75,7 @@ nav > h1 > a:hover {
 h1, h2, h3, h4, h5, h6 {
 	color: var(--highlight-color);
 }
-h1::before {
-	content: "# ";
-}
-h2::before {
-	content: "## ";
-}
-h3::before {
-	content: "### ";
-}
-h4::before {
-	content: "#### ";
-}
-h5::before {
-	content: "##### ";
-}
-h6::before {
-	content: "###### ";
-}
+
 h1 > strong {
 	color: var(--foreground-color);
 }
@@ -330,6 +313,8 @@ li {
 .site_article_header {
 	display: block;
 	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .site_article_header_title {
 	display: block;
@@ -353,4 +338,22 @@ hr::after {
 }
 li::marker {
 	content: '▪';
+}
+h1::before {
+	content: "# ";
+}
+h2::before {
+	content: "## ";
+}
+h3::before {
+	content: "### ";
+}
+h4::before {
+	content: "#### ";
+}
+h5::before {
+	content: "##### ";
+}
+h6::before {
+	content: "###### ";
 }
