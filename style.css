@@ -1,9 +1,21 @@
 /* Font sizes for reference (as I dislike using vars for them):
-Headings: 64px, 50px, 42px, 36px, 28px, 24px
-Body text, and monospace/pre/code: 24px
+Headings: 64px, 50px, 42px, 36px, 28px, 28px
+Body text, and monospace/pre/code: 28px
 Small text: 20px */
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Han+Sans&family=Dela+Gothic+One&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+HK:wght@100;300;400;500;700;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Noto+Sans+TC&family=Nova+Mono&family=Stick&family=Sunflower&family=ZCOOL+QingKe+HuangYou&display=swap');
+@font-face {
+    font-family: 'Sans Stiefel';
+    src: url('/assets/fonts/sanstiefel-webfont.eot');
+    src: url('/assets/fonts/sanstiefel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/sanstiefel-webfont.woff2') format('woff2'),
+         url('/assets/fonts/sanstiefel-webfont.woff') format('woff'),
+         url('/assets/fonts/sanstiefel-webfont.ttf') format('truetype'),
+         url('/assets/fonts/sanstiefel-webfont.svg#sans_stiefelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* *** */
 /* Variables */
 	/* Color */
@@ -45,10 +57,10 @@ html[data-theme='dark'] {
 	/* *** */
 	/* Fonts */
 :root {
-	--heading-font-family: "Archivo Black", "Black Han Sans", "Dela Gothic One", "Noto Sans HK", "Noto Sans SC", "Noto Sans TC", sans-serif;
-	--body-font-family: "Archivo", "Zen Kaku Gothic Antique", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", serif;
-	--small-font-family: "Archivo Narrow", "Zen Kaku Gothic Antique", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", sans-serif;
-	--monospace-font-family: "Anonymous Pro", "Nanum Gothic Coding", "Zen Kaku Gothic Antique", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", monospace;
+	--heading-font-family: "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif;
+	--body-font-family: "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif; 
+	--small-font-family: "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif; 
+	--monospace-font-family: "Nova Mono", "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif; 
 }
 	/* *** */
 /* *** */
@@ -99,11 +111,14 @@ p {
 }
 a, a:visited {
 	color: var(--highlight-color);
-	text-decoration: unset;
+	text-decoration: underline wavy var(--highlight-color);
 }
 a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
+	text-decoration: underline wavy var(--background-color);
+}
+nav > a, nav > a:visited, nav > a:hover, nav > h1 > a, nav > h1 > a:visited, nav > h1 > a:hover {
 	text-decoration: unset;
 }
 button {
@@ -127,7 +142,7 @@ li::marker {
 /* Fonts */
 html, body {
 	font-family: var(--body-font-family);
-	font-size: 24px;
+	font-size: 28px;
 }
 nav {
 	font-family: var(--small-font-family);
@@ -135,7 +150,7 @@ nav {
 }
 nav > h1 {
 	font-family: var(--heading-font-family);
-	font-size: 24px;
+	font-size: 28px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--heading-font-family);
@@ -143,50 +158,107 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2em;
 }
 h1 {
-	font-size: 64px;
+	font-size: 28px;
 }
 h2 {
-	font-size: 50px;
+	font-size: 28px;
 }
 h3 {
-	font-size: 42px;
+	font-size: 28px;
 }
 h4 {
-	font-size: 36px;
+	font-size: 28px;
 }
 h5 {
 	font-size: 28px;
 }
 h6 {
-	font-size: 24px;
+	font-size: 28px;
 }
 p {
 	font-family: var(--body-font-family);
-	font-size: 24px;
+	font-size: 28px;
 	line-height: 1.2em;
 	text-align: start;
 }
-p > strong {
-	font-weight: bold;
+strong, b {
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: underline;
+	text-decoration-style: double;
 }
-em {
-	font-style: italic;
+em, i {
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+strong > a, b > a, strong > a:visited, b > a:visited {
+	letter-spacing: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: var(--highlight-color);
+	text-decoration: underline wavy var(--highlight-color);
+}
+strong > a:hover, b > a:hover {
+	letter-spacing: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: underline wavy var(--background-color);
+}
+em > a, i > a, em > a:visited, i > a:visited {
+	letter-spacing: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: var(--highlight-color);
+	text-decoration: underline wavy var(--highlight-color);
+}
+em > a:hover, i > a:hover {
+	letter-spacing: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: underline wavy var(--background-color);
+}
+/* While I don't use "em" + "strong" constructions, as they can confuse screen readers, there's always the possibility that something I'm quoting does this. As such, I need to have these rules ready for it.*/
+strong > em, em > strong, b > i, i > b, b > em, em > b, strong > i, i > strong {
+	text-decoration: overline underline;
+	text-decoration-style: double;
+}
+strong > em > a, em > strong > a, b > i > a, i > b > a, b > em > a, em > b > a, strong > i > a, i > strong > a, strong > em > a:visited, em > strong > a:visited, b > i > a:visited, i > b > a:visited, b > em > a:visited, em > b > a:visited, strong > i > a:visited, i > strong > a:visited
+ {
+	color: var(--highlight-color);
+	text-decoration: overline underline wavy var(--highlight-color);
+	letter-spacing: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+strong > em > a:hover, em > strong > a:hover, b > i > a:hover, i > b > a:hover, b > em > a:hover, em > b > a:hover, strong > i > a:hover, i > strong > a:hover {
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: overline underline wavy var(--background-color);
+	letter-spacing: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 code, pre {
 	font-family: var(--monospace-font-family);
-	font-size: 18px;
+	font-size: 28px;
 	line-height: 1em
 }
 hr {
 	font-family: var(--body-font-family);
-	font-weight: bold;
-	line-height: 1.2em;
-	font-size: 36px;
+	font-weight: normal;
+	line-height: 1.75em;
+	font-size: 28px;
 }
 li::marker {
 	font-family: var(--body-font-family);
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 28px;
 }
 /* Position, width, flex, borders, paddings, margins, etc. */
 html {
@@ -201,32 +273,30 @@ body {
 	min-width: 100%;
 	min-height: 100%;
 }
+nav {
+	border-bottom: 2px solid #000000;
+}
+article {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 15px;
+	margin: 15px;
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	max-width: 1024px;
+}
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 15px;
 	padding: 0px;
-	text-align: left;
+	text-align: center;
 }
 nav > h1 {
 	padding: 15px 5px 15px 5px;
 	margin: 0px;
-}
-h2 {
-	text-indent: 0.5em;
-}
-h3 {
-	text-indent: 1em;
-}
-h4 {
-	text-indent: 1.5em;
-}
-h5 {
-	text-indent: 2em;
-}
-h6 {
-	text-indent: 2.5em;
 }
 nav > a {
 	padding: 15px 5px 15px 5px;
@@ -238,7 +308,7 @@ p {
 	margin-bottom: 15px;
 }
 code, pre {
-	border: 1px dashed var(--border-color);
+	border: 2px dashed var(--border-color);
 	padding: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -255,95 +325,6 @@ ul {
 }
 li {
 	padding-left: 5px;
-}
-.site_visible {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-}
-.site_header {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: var(--border-color);
-	justify-content: center;
-	align-items: baseline;
-	padding: 0px;
-	margin: 0px;
-}
-.site_header_nav {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: baseline;
-	margin: 0px;
-	padding: 0px;
-}
-.site_content {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	flex-grow: 2;
-}
-.site_content_left_sidebar {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	flex-basis: 320px;
-	justify-content: center;
-	align-items: center;
-}
-.site_content_right_sidebar {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	flex-basis: 320px;
-	justify-content: center;
-	align-items: center;
-}
-.site_content_content_bar {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	max-width: 1280px;
-	justify-content: space-evenly;
-	align-items: flex-start;
-	border-left-width: 1px;
-	border-left-style: solid;
-	border-left-color: var(--border-color);
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: var(--border-color);
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: var(--border-color);
-}
-.site_article_header {
-	display: block;
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.site_article_header_title {
-	display: block;
-}
-.site_article_content {
-	display: block;
-	max-width: 1024px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.content_license {
-	text-align: center;
 }
 /* Content, :after, :before */
 hr::after {
