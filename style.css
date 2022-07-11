@@ -156,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: var(--heading-font-family);
 	font-weight: 900;
 	line-height: 1.2em;
+	text-transform: uppercase;
 }
 h1 {
 	font-size: 28px;
@@ -198,7 +199,7 @@ strong > a, b > a, strong > a:visited, b > a:visited {
 	padding-left: 4px;
 	padding-right: 4px;
 	color: var(--highlight-color);
-	text-decoration: underline wavy var(--highlight-color);
+	text-decoration: overline wavy var(--highlight-color);
 }
 strong > a:hover, b > a:hover {
 	letter-spacing: 8px;
@@ -206,47 +207,39 @@ strong > a:hover, b > a:hover {
 	padding-right: 4px;
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: underline wavy var(--background-color);
+	text-decoration: overline wavy var(--background-color);
 }
 em > a, i > a, em > a:visited, i > a:visited {
 	letter-spacing: 5px;
 	padding-left: 3px;
 	padding-right: 3px;
 	color: var(--highlight-color);
-	text-decoration: underline wavy var(--highlight-color);
+	text-decoration: overline wavy var(--highlight-color);
 }
 em > a:hover, i > a:hover {
-	letter-spacing: 5px;
-	padding-left: 3px;
-	padding-right: 3px;
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: underline wavy var(--background-color);
+	text-decoration: overline wavy var(--background-color);
 }
 /* While I don't use "em" + "strong" constructions, as they can confuse screen readers, there's always the possibility that something I'm quoting does this. As such, I need to have these rules ready for it.*/
 strong > em, em > strong, b > i, i > b, b > em, em > b, strong > i, i > strong {
-	text-decoration: overline underline;
-	text-decoration-style: double;
+	letter-spacing: 6px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 strong > em > a, em > strong > a, b > i > a, i > b > a, b > em > a, em > b > a, strong > i > a, i > strong > a, strong > em > a:visited, em > strong > a:visited, b > i > a:visited, i > b > a:visited, b > em > a:visited, em > b > a:visited, strong > i > a:visited, i > strong > a:visited
  {
 	color: var(--highlight-color);
-	text-decoration: overline underline wavy var(--highlight-color);
-	letter-spacing: 8px;
-	padding-left: 4px;
-	padding-right: 4px;
+	text-decoration: overline wavy var(--highlight-color);
 }
 strong > em > a:hover, em > strong > a:hover, b > i > a:hover, i > b > a:hover, b > em > a:hover, em > b > a:hover, strong > i > a:hover, i > strong > a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: overline underline wavy var(--background-color);
-	letter-spacing: 8px;
-	padding-left: 4px;
-	padding-right: 4px;
+	text-decoration: overline wavy var(--background-color);
 }
 code, pre {
 	font-family: var(--monospace-font-family);
-	font-size: 24px;
+	font-size: 25px;
 	line-height: 1em
 }
 hr {
@@ -310,7 +303,7 @@ p {
 	margin-right: 0px;
 	margin-bottom: 15px;
 }
-code, pre {
+pre {
 	border: 2px dashed var(--border-color);
 	padding: 5px;
 	margin-left: auto;
