@@ -202,17 +202,11 @@ strong > a, b > a, strong > a:visited, b > a:visited {
 	text-decoration: overline wavy var(--highlight-color);
 }
 strong > a:hover, b > a:hover {
-	letter-spacing: 8px;
-	padding-left: 4px;
-	padding-right: 4px;
 	background-color: var(--highlight-color);
 	color: var(--background-color);
 	text-decoration: overline wavy var(--background-color);
 }
 em > a, i > a, em > a:visited, i > a:visited {
-	letter-spacing: 5px;
-	padding-left: 3px;
-	padding-right: 3px;
 	color: var(--highlight-color);
 	text-decoration: overline wavy var(--highlight-color);
 }
