@@ -317,18 +317,41 @@ hr {
 }
 ul {
 	padding: 0px;
-	margin-left: 18px;
+	margin-left: 21px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
 }
 li {
 	padding-left: 5px;
 }
 /* Content, :after, :before */
 hr::after {
-	content: '⁂';
+	content: '* * *';
 	display: block;
 	text-align: center;
 }
 li::marker {
 	content: '▪';
 }
-
+h1::before, h1::after {
+	content: ' - '
+}
+h2::before, h2::after {
+	content: ' -- '
+}
+h3::before, h3::after {
+	content: ' --- '
+}
+h4::before, h4::after {
+	content: ' ---- '
+}
+h5::before, h5::after {
+	content: ' ----- '
+}
+h6::before, h6::after {
+	content: ' ------ '
+}
+nav > h1::before, nav > h1::after {
+	content: '';
+}
