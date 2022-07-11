@@ -268,13 +268,13 @@ body {
 }
 nav {
 	border-bottom: 2px solid #000000;
+	padding: 15px;
+	text-align: center
 }
 article {
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
-	margin-left: 60px;
-	margin-right: 60px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 0px;
 	margin-bottom: 15px;
 	border-left: 2px solid #000000;
@@ -291,17 +291,20 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 nav > h1 {
-	padding: 15px 5px 15px 5px;
-	margin: 0px;
-}
-nav > a {
-	padding: 15px 5px 15px 5px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px;
 }
 p {
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 15px;
+}
+nav > p {
+	text-align: center;
 }
 pre {
 	border: 2px dashed var(--border-color);
