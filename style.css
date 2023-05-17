@@ -186,7 +186,6 @@ strong, b {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: underline;
-	text-decoration-style: double;
 }
 em, i {
 	font-weight: normal;
@@ -199,21 +198,21 @@ strong > a, b > a, strong > a:visited, b > a:visited {
 	padding-left: 4px;
 	padding-right: 4px;
 	color: var(--highlight-color);
-	text-decoration: overline wavy var(--highlight-color);
+	text-decoration: underline wavy var(--highlight-color);
 }
 strong > a:hover, b > a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: overline wavy var(--background-color);
+	text-decoration: underline wavy var(--background-color);
 }
 em > a, i > a, em > a:visited, i > a:visited {
 	color: var(--highlight-color);
-	text-decoration: overline wavy var(--highlight-color);
+	text-decoration: underline solid var(--highlight-color);
 }
 em > a:hover, i > a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: overline wavy var(--background-color);
+	text-decoration: underline solid var(--background-color);
 }
 /* While I don't use "em" + "strong" constructions, as they can confuse screen readers, there's always the possibility that something I'm quoting does this. As such, I need to have these rules ready for it.*/
 strong > em, em > strong, b > i, i > b, b > em, em > b, strong > i, i > strong {
