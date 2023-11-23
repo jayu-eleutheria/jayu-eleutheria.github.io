@@ -74,7 +74,7 @@ p {
 a, a:visited {
 	color: var(--highlight-color);
 	text-decoration: underline;
-	text-decoration-style: wavy; 
+	text-decoration-style: double; 
 	text-decoration-color: var(--highlight-color);
 	text-decoration-thickness: 1px;
 }
@@ -82,7 +82,7 @@ a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
 	text-decoration: underline; 
-	text-decoration-style: wavy;
+	text-decoration-style: double;
 	text-decoration-color: var(--background-color);
 	text-decoration-thickness: 1px;
 }
@@ -169,7 +169,7 @@ strong > a, b > a, strong > a:visited, b > a:visited {
 	padding-right: 4px;
 	color: var(--highlight-color);
 	text-decoration: underline; 
-	text-decoration-style: wavy; 
+	text-decoration-style: double; 
 	text-decoration-color: var(--highlight-color);
 	text-decoration-thickness: 1px;
 }
@@ -177,7 +177,7 @@ strong > a:hover, b > a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
 	text-decoration: underline; 
-	text-decoration-style: wavy;
+	text-decoration-style: double;
 	text-decoration-color: var(--background-color);
 	text-decoration-thickness: 1px;
 }
@@ -205,7 +205,7 @@ strong > em > a, em > strong > a, b > i > a, i > b > a, b > em > a, em > b > a, 
  {
 	color: var(--highlight-color);
 	text-decoration: overline; 
-	text-decoration-style: wavy; 
+	text-decoration-style: double; 
 	text-decoration-color: var(--highlight-color);
 	text-decoration-thickness: 1px;
 }
@@ -213,7 +213,7 @@ strong > em > a:hover, em > strong > a:hover, b > i > a:hover, i > b > a:hover, 
 	background-color: var(--highlight-color);
 	color: var(--background-color);
 	text-decoration: overline; 
-	text-decoration-style: wavy; 
+	text-decoration-style: double; 
 	text-decoration-color: var(--background-color);
 	text-decoration-thickness: 1px;
 }
