@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
 	--black: #FFFFFF;
 	--blue: #f5fffb;
@@ -17,10 +17,10 @@ html {
 	--border-color: var(--black);
 }
 :root {
-	--heading-font-family: "Zen Kurenaido", sans-serif;
-	--body-font-family: "Zen Kurenaido", sans-serif; 
-	--small-font-family: "Zen Kurenaido", sans-serif; 
-	--monospace-font-family: "Zen Kurenaido", sans-serif; 
+	--heading-font-family: "Courier Prime", sans-serif;
+	--body-font-family: "Courier Prime", sans-serif; 
+	--small-font-family: "Courier Prime", sans-serif; 
+	--monospace-font-family: "Courier Prime", sans-serif; 
 }
 
 html, body {
