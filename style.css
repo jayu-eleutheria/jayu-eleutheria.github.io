@@ -1,70 +1,32 @@
 /* Font sizes for reference (as I dislike using vars for them):
-Headings: 64px, 50px, 42px, 36px, 28px, 28px
-Body text, and monospace/pre/code: 28px
+Headings: 64px, 50px, 41px, 36px, 21px, 21px
+Body text, and monospace/pre/code: 21px
 Small text: 20px */
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Noto+Sans+TC&family=Nova+Mono&family=Stick&family=Sunflower&family=ZCOOL+QingKe+HuangYou&display=swap');
-@font-face {
-    font-family: 'Sans Stiefel';
-    src: url('/assets/fonts/sanstiefel-webfont.eot');
-    src: url('/assets/fonts/sanstiefel-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/sanstiefel-webfont.woff2') format('woff2'),
-         url('/assets/fonts/sanstiefel-webfont.woff') format('woff'),
-         url('/assets/fonts/sanstiefel-webfont.ttf') format('truetype'),
-         url('/assets/fonts/sanstiefel-webfont.svg#sans_stiefelregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-/* *** */
-/* Variables */
-	/* Color */
-		/* Color variables */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 :root {
-	/* Colors by hue and brightness */
 	--black: #000000;
 	--blue: #f5fffb;
 	--bright-red: #b0275c;
 	--dark-red: #8c1f4c;
 	--white: #fff5f9;
-	/* Colors by function */
 	--background-color: var(--white);
 	--foreground-color: var(--black);
 	--highlight-color: var(--dark-red);
 	--border-color: var(--black);
 	}
-		/* *** */
-		/* Light theme */
-			/* Color assignment */
-html[data-theme='light'] {
+html {
 	--background-color: var(--white);
 	--foreground-color: var(--black);
 	--highlight-color: var(--dark-red);
 	--border-color: var(--black);
 }
-			/* *** */
-		/* *** */
-		/* Dark theme */
-			/* Color assignment */
-html[data-theme='dark'] {
-	--background-color: var(--black);
-	--foreground-color: var(--white);
-	--highlight-color: var(--blue);
-	--border-color: var(--blue);
-}
-			/* *** */
-		/* *** */
-	/* *** */
-	/* Fonts */
 :root {
-	--heading-font-family: "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif;
-	--body-font-family: "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif; 
-	--small-font-family: "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif; 
-	--monospace-font-family: "Nova Mono", "Sans Stiefel", "Stick", "Sunflower", "ZCOOL QingKe HuangYou", "Noto Sans HK", "Noto Sans TC", sans-serif; 
+	--heading-font-family: "Zen Kurenaido", sans-serif;
+	--body-font-family: "Zen Kurenaido", sans-serif; 
+	--small-font-family: "Zen Kurenaido", sans-serif; 
+	--monospace-font-family: "Zen Kurenaido", sans-serif; 
 }
-	/* *** */
-/* *** */
-/* Colors */
 
 html, body {
 	background-color: var(--background-color);
@@ -111,12 +73,18 @@ p {
 }
 a, a:visited {
 	color: var(--highlight-color);
-	text-decoration: underline wavy var(--highlight-color);
+	text-decoration: underline;
+	text-decoration-style: wavy; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
 }
 a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: underline wavy var(--background-color);
+	text-decoration: underline; 
+	text-decoration-style: wavy;
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
 }
 nav > a, nav > a:visited, nav > a:hover, nav > h1 > a, nav > h1 > a:visited, nav > h1 > a:hover {
 	text-decoration: unset;
@@ -142,79 +110,92 @@ li::marker {
 /* Fonts */
 html, body {
 	font-family: var(--body-font-family);
-	font-size: 28px;
+	font-size: 21px;
 }
 nav {
 	font-family: var(--small-font-family);
-	font-size: 20px;
+	font-size: 21px;
 }
 nav > h1 {
 	font-family: var(--heading-font-family);
-	font-size: 28px;
+	font-size: 21px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--heading-font-family);
-	font-weight: 900;
+	font-weight: normal;
 	line-height: 1.2em;
 	text-transform: uppercase;
 }
 h1 {
-	font-size: 28px;
+	font-size: 21px;
 }
 h2 {
-	font-size: 28px;
+	font-size: 21px;
 }
 h3 {
-	font-size: 28px;
+	font-size: 21px;
 }
 h4 {
-	font-size: 28px;
+	font-size: 21px;
 }
 h5 {
-	font-size: 28px;
+	font-size: 21px;
 }
 h6 {
-	font-size: 28px;
+	font-size: 21px;
 }
 p {
 	font-family: var(--body-font-family);
-	font-size: 28px;
-	line-height: 1.5em;
+	font-size: 21px;
+	line-height: 1.2em;
 	text-align: start;
 }
 strong, b {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: underline;
+	text-decoration-thickness: 1px;
 }
 em, i {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: underline;
 	text-decoration-style: dashed;
+	text-decoration-thickness: 1px;
 }
 strong > a, b > a, strong > a:visited, b > a:visited {
 	letter-spacing: 8px;
 	padding-left: 4px;
 	padding-right: 4px;
 	color: var(--highlight-color);
-	text-decoration: underline wavy var(--highlight-color);
+	text-decoration: underline; 
+	text-decoration-style: wavy; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
 }
 strong > a:hover, b > a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: underline wavy var(--background-color);
+	text-decoration: underline; 
+	text-decoration-style: wavy;
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
 }
 em > a, i > a, em > a:visited, i > a:visited {
 	color: var(--highlight-color);
-	text-decoration: underline solid var(--highlight-color);
+	text-decoration: underline; 
+	text-decoration-style: solid; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
 }
 em > a:hover, i > a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: underline solid var(--background-color);
+	text-decoration: underline; 
+	text-decoration-style: solid; 
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
 }
-/* While I don't use "em" + "strong" constructions, as they can confuse screen readers, there's always the possibility that something I'm quoting does this. As such, I need to have these rules ready for it.*/
 strong > em, em > strong, b > i, i > b, b > em, em > b, strong > i, i > strong {
 	letter-spacing: 6px;
 	padding-left: 4px;
@@ -223,28 +204,34 @@ strong > em, em > strong, b > i, i > b, b > em, em > b, strong > i, i > strong {
 strong > em > a, em > strong > a, b > i > a, i > b > a, b > em > a, em > b > a, strong > i > a, i > strong > a, strong > em > a:visited, em > strong > a:visited, b > i > a:visited, i > b > a:visited, b > em > a:visited, em > b > a:visited, strong > i > a:visited, i > strong > a:visited
  {
 	color: var(--highlight-color);
-	text-decoration: overline wavy var(--highlight-color);
+	text-decoration: overline; 
+	text-decoration-style: wavy; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
 }
 strong > em > a:hover, em > strong > a:hover, b > i > a:hover, i > b > a:hover, b > em > a:hover, em > b > a:hover, strong > i > a:hover, i > strong > a:hover {
 	background-color: var(--highlight-color);
 	color: var(--background-color);
-	text-decoration: overline wavy var(--background-color);
+	text-decoration: overline; 
+	text-decoration-style: wavy; 
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
 }
 code, pre {
 	font-family: var(--monospace-font-family);
-	font-size: 25px;
+	font-size: 21px;
 	line-height: 1em
 }
 hr {
 	font-family: var(--body-font-family);
 	font-weight: normal;
 	line-height: 1.75em;
-	font-size: 28px;
+	font-size: 21px;
 }
 li::marker {
 	font-family: var(--body-font-family);
 	font-weight: normal;
-	font-size: 28px;
+	font-size: 21px;
 }
 /* Position, width, flex, borders, paddings, margins, etc. */
 html {
@@ -260,7 +247,7 @@ body {
 	min-height: 100%;
 }
 nav {
-	border-bottom: 2px solid #000000;
+	border-bottom: 1px solid #000000;
 	padding: 15px;
 	text-align: center
 }
@@ -270,9 +257,9 @@ article {
 	margin-right: auto;
 	margin-top: 0px;
 	margin-bottom: 15px;
-	border-left: 2px solid #000000;
-	border-right: 2px solid #000000;
-	border-bottom: 2px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 	max-width: 1024px;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -300,7 +287,7 @@ nav > p {
 	text-align: center;
 }
 pre {
-	border: 2px dashed var(--border-color);
+	border: 1px dashed var(--border-color);
 	padding: 5px;
 	margin-left: auto;
 	margin-right: auto;
@@ -325,8 +312,8 @@ li {
 	padding-left: 5px;
 }
 blockquote {
-	border-left: 2px solid var(--border-color);
-	border-bottom: 2px solid var(--border-color);
+	border-left: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 	padding-left: 5px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -338,30 +325,30 @@ blockquote {
 }
 /* Content, :after, :before */
 hr::after {
-	content: '* * *';
+	content: '༻❁༺';
 	display: block;
 	text-align: center;
 }
 li::marker {
-	content: '▪';
+	content: '❁';
 }
 h1::before, h1::after {
-	content: ' - '
+	content: ' # '
 }
 h2::before, h2::after {
-	content: ' -- '
+	content: ' ## '
 }
 h3::before, h3::after {
-	content: ' --- '
+	content: ' ### '
 }
 h4::before, h4::after {
-	content: ' ---- '
+	content: ' #### '
 }
 h5::before, h5::after {
-	content: ' ----- '
+	content: ' ##### '
 }
 h6::before, h6::after {
-	content: ' ------ '
+	content: ' ###### '
 }
 nav > h1::before, nav > h1::after {
 	content: '';
