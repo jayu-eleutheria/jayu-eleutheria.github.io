@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+:root {
+	--black: #FFFFFF;
+	--blue: #f5fffb;
+	--bright-red: #b0275c;
+	--dark-red: #CCCC66;
+	--white: #333333;
+	--background-color: var(--white);
+	--foreground-color: var(--black);
+	--highlight-color: var(--dark-red);
+	--border-color: var(--black);
+	}
+html {
+	--background-color: var(--white);
+	--foreground-color: var(--black);
+	--highlight-color: var(--dark-red);
+	--border-color: var(--black);
+}
+:root {
+	--heading-font-family: "Zen Kurenaido", sans-serif;
+	--body-font-family: "Zen Kurenaido", sans-serif; 
+	--small-font-family: "Zen Kurenaido", sans-serif; 
+	--monospace-font-family: "Zen Kurenaido", sans-serif; 
+}
+
+html, body {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+header, nav, footer {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+nav > h1 {
+	color: var(--foreground-color);
+}
+nav > h1 > a, nav > h1 > a:visited {
+	color: var(--foreground-color);
+}
+nav > h1 > a:hover {
+	color: var(--highlight-color);
+	background-color: var(--background-color);
+}
+h1, h2, h3, h4, h5, h6 {
+	color: var(--highlight-color);
+}
+
+h1 > strong {
+	color: var(--foreground-color);
+}
+h2 > strong {
+	color: var(--foreground-color);
+}
+h3 > strong {
+	color: var(--foreground-color);
+}
+h4 > strong {
+	color: var(--foreground-color);
+}
+h5 > strong {
+	color: var(--foreground-color);
+}
+h6 > strong {
+	color: var(--foreground-color);
+}
+p {
+	color: var(--foreground-color);
+}
+a, a:visited {
+	color: var(--highlight-color);
+	text-decoration: underline;
+	text-decoration-style: double; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
+}
+a:hover {
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: underline; 
+	text-decoration-style: double;
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
+}
+nav > a, nav > a:visited, nav > a:hover, nav > h1 > a, nav > h1 > a:visited, nav > h1 > a:hover {
+	text-decoration: unset;
+}
+button {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+button:hover, form, input, select, option {
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+}
+code, pre {
+	color: var(--foreground-color);
+}
+hr {
+	background: none;
+	color: var(--foreground-color);
+}
+li::marker {
+	color: var(--highlight-color);
+}
+/* Fonts */
+html, body {
+	font-family: var(--body-font-family);
+	font-size: 21px;
+}
+nav {
+	font-family: var(--small-font-family);
+	font-size: 21px;
+}
+nav > h1 {
+	font-family: var(--heading-font-family);
+	font-size: 21px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--heading-font-family);
+	font-weight: 700;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 21px;
+}
+h2 {
+	font-size: 21px;
+}
+h3 {
+	font-size: 21px;
+}
+h4 {
+	font-size: 21px;
+}
+h5 {
+	font-size: 21px;
+}
+h6 {
+	font-size: 21px;
+}
+p {
+	font-family: var(--body-font-family);
+	font-size: 21px;
+	line-height: 1.2em;
+	text-align: start;
+}
+strong, b {
+	font-weight: 700;
+	font-style: normal;
+}
+em, i {
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	text-decoration-thickness: 1px;
+}
+strong > a, b > a, strong > a:visited, b > a:visited {
+	color: var(--highlight-color);
+	text-decoration: underline; 
+	text-decoration-style: double; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
+}
+strong > a:hover, b > a:hover {
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: underline; 
+	text-decoration-style: double;
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
+}
+em > a, i > a, em > a:visited, i > a:visited {
+	color: var(--highlight-color);
+	text-decoration: underline; 
+	text-decoration-style: double; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
+}
+em > a:hover, i > a:hover {
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: underline; 
+	text-decoration-style: double; 
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
+}
+strong > em > a, em > strong > a, b > i > a, i > b > a, b > em > a, em > b > a, strong > i > a, i > strong > a, strong > em > a:visited, em > strong > a:visited, b > i > a:visited, i > b > a:visited, b > em > a:visited, em > b > a:visited, strong > i > a:visited, i > strong > a:visited
+ {
+	color: var(--highlight-color);
+	text-decoration: overline; 
+	text-decoration-style: double; 
+	text-decoration-color: var(--highlight-color);
+	text-decoration-thickness: 1px;
+}
+strong > em > a:hover, em > strong > a:hover, b > i > a:hover, i > b > a:hover, b > em > a:hover, em > b > a:hover, strong > i > a:hover, i > strong > a:hover {
+	background-color: var(--highlight-color);
+	color: var(--background-color);
+	text-decoration: overline; 
+	text-decoration-style: double; 
+	text-decoration-color: var(--background-color);
+	text-decoration-thickness: 1px;
+}
+code, pre {
+	font-family: var(--monospace-font-family);
+	font-size: 21px;
+	line-height: 1em
+}
+hr {
+	font-family: var(--body-font-family);
+	font-weight: normal;
+	line-height: 1.75em;
+	font-size: 21px;
+}
+li::marker {
+	font-family: var(--body-font-family);
+	font-weight: normal;
+	font-size: 21px;
+}
+/* Position, width, flex, borders, paddings, margins, etc. */
+html {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	min-width: 100%;
+	min-height: 100%;
+}
+nav {
+	border-bottom: 1px solid #000000;
+	padding: 15px;
+	text-align: center
+}
+article {
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	max-width: 1024px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	padding: 0px;
+	text-align: center;
+}
+nav > h1 {
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px;
+}
+p {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+nav > p {
+	text-align: center;
+}
+pre {
+	border: 1px dashed var(--border-color);
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+hr {
+	border: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+ul {
+	padding: 0px;
+	margin-left: 21px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+li {
+	padding-left: 5px;
+}
+blockquote {
+	border-left: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	padding-left: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+/* Content, :after, :before */
+hr::after {
+	content: '> > >'
+	display: block;
+	text-align: center;
+}
+li::marker {
+	content: '>';
+}
+h1::before, h1::after {
+	content: ' # '
+}
+h2::before, h2::after {
+	content: ' ## '
+}
+h3::before, h3::after {
+	content: ' ### '
+}
+h4::before, h4::after {
+	content: ' #### '
+}
+h5::before, h5::after {
+	content: ' ##### '
+}
+h6::before, h6::after {
+	content: ' ###### '
+}
+nav > h1::before, nav > h1::after {
+	content: '';
+}
