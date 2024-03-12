@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Vectorcnxt';
+    src: url('Vectorcnxt.eot');
+    src: url('Vectorcnxt.eot?#iefix') format('embedded-opentype'),
+        url('Vectorcnxt.woff2') format('woff2'),
+        url('Vectorcnxt.woff') format('woff'),
+        url('Vectorcnxt.ttf') format('truetype'),
+        url('Vectorcnxt.svg#Vectorcnxt') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

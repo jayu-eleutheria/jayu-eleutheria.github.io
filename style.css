@@ -1,9 +1,16 @@
-/* Font sizes for reference (as I dislike using vars for them):
-Headings: 64px, 50px, 41px, 36px, 21px, 21px
-Body text, and monospace/pre/code: 21px
-Small text: 20px */
-/* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@font-face {
+    font-family: 'Vectorcnxt';
+    src: url('https://flowersfortheend.xyz/assets/fonts/Vectorcnxt.eot');
+    src: url('https://flowersfortheend.xyz/assets/fonts/Vectorcnxt.eot?#iefix') format('embedded-opentype'),
+        url('https://flowersfortheend.xyz/assets/fonts/Vectorcnxt.woff2') format('woff2'),
+        url('https://flowersfortheend.xyz/assets/fonts/Vectorcnxt.woff') format('woff'),
+        url('https://flowersfortheend.xyz/assets/fonts/Vectorcnxt.ttf') format('truetype'),
+        url('https://flowersfortheend.xyz/assets/fonts/Vectorcnxt.svg#Vectorcnxt') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
 	--black: #000000;
 	--blue: #f5fffb;
@@ -22,10 +29,10 @@ html {
 	--border-color: var(--black);
 }
 :root {
-	--heading-font-family: "Zen Kurenaido", sans-serif;
-	--body-font-family: "Zen Kurenaido", sans-serif; 
-	--small-font-family: "Zen Kurenaido", sans-serif; 
-	--monospace-font-family: "Zen Kurenaido", sans-serif; 
+	--heading-font-family: "Vectorcnxt", sans-serif;
+	--body-font-family: "Vectorcnxt", sans-serif; 
+	--small-font-family: "Vectorcnxt", sans-serif; 
+	--monospace-font-family: "Vectorcnxt", sans-serif; 
 }
 
 html, body {
@@ -110,15 +117,15 @@ li::marker {
 /* Fonts */
 html, body {
 	font-family: var(--body-font-family);
-	font-size: 21px;
+	font-size: 20px;
 }
 nav {
 	font-family: var(--small-font-family);
-	font-size: 21px;
+	font-size: 20px;
 }
 nav > h1 {
 	font-family: var(--heading-font-family);
-	font-size: 21px;
+	font-size: 20px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--heading-font-family);
@@ -127,26 +134,26 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 h1 {
-	font-size: 21px;
+	font-size: 20px;
 }
 h2 {
-	font-size: 21px;
+	font-size: 20px;
 }
 h3 {
-	font-size: 21px;
+	font-size: 20px;
 }
 h4 {
-	font-size: 21px;
+	font-size: 20px;
 }
 h5 {
-	font-size: 21px;
+	font-size: 20px;
 }
 h6 {
-	font-size: 21px;
+	font-size: 20px;
 }
 p {
 	font-family: var(--body-font-family);
-	font-size: 21px;
+	font-size: 20px;
 	line-height: 1.2em;
 	text-align: start;
 }
