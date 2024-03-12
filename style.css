@@ -226,7 +226,7 @@ strong > em > a:hover, em > strong > a:hover, b > i > a:hover, i > b > a:hover, 
 }
 code, pre {
 	font-family: var(--monospace-font-family);
-	font-size: 21px;
+	font-size: 20px;
 	line-height: 1em
 }
 hr {
@@ -267,7 +267,7 @@ article {
 	border-left: 1px solid #000000;
 	border-right: 1px solid #000000;
 	border-bottom: 1px solid #000000;
-	max-width: 1024px;
+	max-width: 800px;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0px;
@@ -340,22 +340,22 @@ li::marker {
 	content: '❁';
 }
 h1::before, h1::after {
-	content: ' # '
+	content: ' ❁ '
 }
 h2::before, h2::after {
-	content: ' ## '
+	content: ' ❁❁ '
 }
 h3::before, h3::after {
-	content: ' ### '
+	content: ' ❁❁❁ '
 }
 h4::before, h4::after {
-	content: ' #### '
+	content: ' ❁❁❁❁ '
 }
 h5::before, h5::after {
-	content: ' ##### '
+	content: ' ❁❁❁❁❁ '
 }
 h6::before, h6::after {
-	content: ' ###### '
+	content: ' ❁❁❁❁❁❁ '
 }
 nav > h1::before, nav > h1::after {
 	content: '';
